@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 function Item(prop){
-    console.log(prop);
-    
+    let productRating = parseInt(prop.rating);
+    console.log(productRating);
     return (
     <div className="col mb-5">
     <div className="card h-100">
@@ -11,19 +11,25 @@ function Item(prop){
         <div className="card-body p-4">
             <div className="text-center">
                 <h5 className="fw-bolder">{prop.category}</h5>
-                <div className="d-flex justify-content-center small text-warning mb-2">
-                    <div className="bi-star-fill"></div>
-                    <div className="bi-star-fill"></div>
-                    <div className="bi-star-fill"></div>
-                    <div className="bi-star-fill"></div>
-                    <div className="bi-star-fill"></div>
-                </div>
+                    <div className="d-flex justify-content-center small text-warning mb-2">                        
+                     {(() => {                
+                        const options = [];
+                        if(productRating !== 0){                        
+                            for (let i = 0; i<productRating; i++) {                           
+                            options.push(<div className="bi-star-fill"></div>);
+                            }  
+                            return options;
+                        } 
+                    })()}                                         
+                    </div>
+                    
                 <span className="text-muted text-decoration-line-through">{prop.oldprice}</span>
                 {prop.price}
             </div>
         </div>
         <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-            <div className="text-center"><button className="btn btn-outline-dark mt-auto" onClick={ prop.action === "Add to cart" ? prop.count : null}>{prop.action}</button></div>
+            <div className="text-center"><button data-id={prop.id} className="btn btn-outline-dark mt-auto" 
+            onClick={ prop.count }>{prop.action}</button></div>
         </div>
     </div>
     </div>

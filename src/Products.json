@@ -20,7 +20,9 @@
 
         "action": "View Options",
 
-        "qty": 0
+        "qty": 0,
+
+        "isAdded": false
   
       },
       {
@@ -35,13 +37,15 @@
 
         "oldprice": "$20.00",
 
-        "rating": 5,
+        "rating": 2,
 
         "availableforsale": "sale",
 
         "action": "Add to cart",
 
-        "qty": 0
+        "qty": 0,
+
+        "isAdded": false
   
       },
       {
@@ -56,13 +60,15 @@
 
         "oldprice": "$50.00",
 
-        "rating": 0,
+        "rating": 5,
 
         "availableforsale": "sale",
 
         "action": "Add to cart",
 
-        "qty": 0
+        "qty": 0,
+
+        "isAdded": false
   
       },
       {
@@ -77,13 +83,15 @@
 
         "oldprice": null,
 
-        "rating": 5,
+        "rating": 4,
 
         "availableforsale": null,
 
         "action": "Add to cart",
 
-        "qty": 0
+        "qty": 0,
+
+        "isAdded": false
   
       },
   
@@ -99,13 +107,15 @@
 
         "oldprice": "$50.00",
 
-        "rating": 0,
+        "rating": 3,
 
         "availableforsale": "sale",
 
         "action": "Add to cart",
 
-        "qty": 0
+        "qty": 0,
+
+        "isAdded": false
   
       },
       {
@@ -120,13 +130,15 @@
 
         "oldprice":  "$120.00",
 
-        "rating": 5,
+        "rating": 2,
 
         "availableforsale": null,
 
-        "action": "View options",
+        "action": "View Options",
 
-        "qty": 0
+        "qty": 0,
+
+        "isAdded": false
   
       },
       {
@@ -141,13 +153,15 @@
 
         "oldprice": "$20.00",
 
-        "rating": 5,
+        "rating": 1,
 
         "availableforsale": "sale",
 
         "action": "Add to cart",
 
-        "qty": 0
+        "qty": 0,
+
+        "isAdded": false
   
       },
       {
@@ -162,13 +176,15 @@
 
         "oldprice": null,
 
-        "rating": 5,
+        "rating": 2,
 
         "availableforsale": null,
 
         "action": "Add to cart",
 
-        "qty": 0
+        "qty": 0,
+
+        "isAdded": false
   
       }
 
